@@ -3,6 +3,11 @@
  */
 $(document).ready(function () {
 
+    var scale = 'scale(1)';
+    document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
+    document.body.style.msTransform =   scale;       // IE 9
+    document.body.style.transform = scale;     // General
+
     $(".section").hide();
     $('.section-social').hide();
     var NameTicked = true;
@@ -17,7 +22,7 @@ $(document).ready(function () {
             NameTicked = true;
             $('.header-name').text("Lewis Johnson..|");
         }
-        if(TimesTicked < 1) {
+        if(TimesTicked < 5) {
             TimesTicked++;
             setTimeout(name_tick, 500);
         } else {
