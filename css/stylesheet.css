@@ -38,7 +38,7 @@ footer{
     transform: translate(-50%, -50%);
     text-align: center;
     font-weight: 100;
-    font-size: 5rem;
+    font-size: 10vw;
     color: #cacaca;
     overflow: hidden;
     white-space: nowrap;
@@ -53,8 +53,8 @@ footer{
     position: relative;
     display: none;
     width: 100vw;
-    margin: -2rem;
-    top: 20vh;
+    margin: -1rem;
+    top: 6vh;
 }
 
 .section-content{
@@ -236,29 +236,59 @@ footer{
 /* Mobile */
 @media screen and (max-width: 800px){
     .ls{
+        position: relative;
         width: 100%;
         float: none;
     }
 
     .ms{
+        position: relative;
         width: 100%;
         float: none;
     }
 
     .rs{
+        position: relative;
         width: 100%;
         float: none;
     }
 
     .section-social{
-        display: none;
+        position: relative;
+        display: none !important;
+    }
+
+    .section-content{
+        padding: 1rem;
+        width: auto;
     }
 
     .section-social-in{
-        display: block;
+        display: block !important;
+    }
+
+    .grid{
+        padding: 0;
     }
 
     body{
         overflow: auto;
+    }
+
+    p{
+        padding: 0;
+        margin: 0;
+    }
+
+
+}
+
+@media screen and (min-width: 800px){
+    .section-social{
+        display: block;
+    }
+
+    .section-social-in{
+        display: none !important;
     }
 }
