@@ -12,11 +12,20 @@ body{
     min-height: 100vh;
 }
 
-footer{
+.desktop-footer {
     position: fixed;
     top: 99%;
     left: 99%;
     transform: translate(-99%, -99%);
+    font-weight: 100;
+    font-size: 1rem;
+    color: #868686;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.mobile-footer {
+    position: relative;
     font-weight: 100;
     font-size: 1rem;
     color: #868686;
@@ -235,36 +244,23 @@ footer{
 
 /* Mobile */
 @media screen and (max-width: 800px){
-    .ls{
-        position: relative;
-        width: 100%;
-        float: none;
-    }
-
-    .ms{
-        position: relative;
-        width: 100%;
-        float: none;
-    }
-
-    .rs{
-        position: relative;
-        width: 100%;
-        float: none;
-    }
 
     .section-social{
-        position: relative;
         display: none !important;
     }
 
     .section-content{
         padding: 1rem;
-        width: auto;
     }
 
     .section-social-in{
-        display: block !important;
+        display: inline-block !important;
+    }
+
+    .section-header {
+        width: 100%;
+        padding: 1rem;
+        clear: both;
     }
 
     .grid{
@@ -275,11 +271,23 @@ footer{
         overflow: auto;
     }
 
-    p{
-        padding: 0;
-        margin: 0;
+    .desktop-footer {
+        display: none;
     }
 
+    .mobile-footer {
+        display: inline-block;
+    }
+
+    .section {
+        position: relative;
+        display: block;
+        overflow: auto;
+        overflow-x: hidden;
+        height: auto;
+        width: 100%;
+        float: none;
+    }
 
 }
 
@@ -290,5 +298,13 @@ footer{
 
     .section-social-in{
         display: none !important;
+    }
+
+    .desktop-footer {
+        display: block;
+    }
+
+    .mobile-footer {
+        display: none;
     }
 }
