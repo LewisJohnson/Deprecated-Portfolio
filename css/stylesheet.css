@@ -6,7 +6,7 @@
 
 /*
 Light: #ececec
-Dark: #232323*/
+Dark: #232323 */
 body{
     background: #232323;
     overflow: hidden;
@@ -145,7 +145,7 @@ body{
 .section-social li a p {
     display: inline-block;
     position: relative;
-    top: -1rem;
+    top: -0.7rem;
     font-weight: 100;
     color: #ffffff;
     font-size: 2rem;
