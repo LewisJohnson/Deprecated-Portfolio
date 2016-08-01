@@ -94,7 +94,6 @@ body{
     overflow: hidden;
     white-space: nowrap;
     padding: 0.5rem;
-
 }
 
 .ls .section-header{
@@ -172,35 +171,50 @@ body{
 }
 
 .grid {
-    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
     list-style-type: none;
     width: 100%;
+    height: 90%;
+    padding: 0;
 }
 
 .grid li {
-    float: left;
-    padding: 0.25em;
-    margin: 0.1rem;
-}
-
-
-.grid a:hover {
+    margin-bottom: 1rem;
+    padding: 1rem 2rem 1rem 1rem;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
     background-color: #303030;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
-.grid a {
+.grid h1 {
     display: block;
-    width: 150px;
-    height: 150px;
-    background: #222222;
     color: white;
     font-weight: 100;
     font-size: 2rem;
-    text-decoration: none;
     text-align: center;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+}
+
+.grid h2 {
+    display: block;
+    color: #c9c9c9;
+    font-weight: 100;
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.grid p {
+    color: white;
+}
+
+.grid img {
+    float: left;
+    padding-right: 1rem;
 }
 
 .email{
@@ -241,4 +255,46 @@ body{
 
 .github:hover {
     background: #130d06;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #838383;
+    border: 0 none #ffffff;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #6a0003;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+    border: 0 solid #ffffff;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #000000;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #000000;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
 }
