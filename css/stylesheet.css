@@ -2,35 +2,23 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-
 }
 
+/*
+Light: #ececec
+Dark: #232323*/
 body{
-    background: #0f0f0f;
+    background: #232323;
     overflow: hidden;
     height: 100vh;
     min-height: 100vh;
+    -webkit-transition: background 4s;
+    -moz-transition: background 4s;
+    transition: background 4s;
 }
 
-.desktop-footer {
-    position: fixed;
-    top: 99%;
-    left: 99%;
-    transform: translate(-99%, -99%);
-    font-weight: 100;
-    font-size: 1rem;
-    color: #868686;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.mobile-footer {
-    position: relative;
-    font-weight: 100;
-    font-size: 1rem;
-    color: #868686;
-    overflow: hidden;
-    white-space: nowrap;
+.light {
+    background: #ececec;
 }
 
 ::selection {
@@ -40,14 +28,14 @@ body{
     background: rgb(210, 210, 210);
 }
 
-.header-name{
-    position: fixed;
+.intro-title {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     font-weight: 100;
-    font-size: 10vw;
+    font-size: 4vw;
     color: #cacaca;
     overflow: hidden;
     white-space: nowrap;
@@ -56,14 +44,6 @@ body{
 .section{
     position: relative;
     height:100vh;
-}
-
-.section-social-in{
-    position: relative;
-    display: none;
-    width: 100vw;
-    margin: -1rem;
-    top: 6vh;
 }
 
 .section-content{
@@ -83,7 +63,7 @@ body{
 }
 
 .ms .section-content ul li {
-    color: #cacaca;
+    color: #232323;
 }
 
 .section h1{
@@ -100,13 +80,13 @@ body{
 
 .section h3{
     font-weight: 100;
-    color: #cacaca;
+    color: #232323;
     font-size: 1.5rem;
     margin-top: 1rem;
 }
 
 .section p {
-    color: #cacaca;
+    color: #232323;
     text-align: justify;
 }
 
@@ -142,15 +122,54 @@ body{
 
 .rs{
     width: 50%;
-    float: right;
+    float: left;
 }
 
 .section-social{
-    position:fixed;
-    bottom:0;
-    width: 25%;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0 0;
+    overflow: hidden;
 }
-/* PROJECTS LAYOUT */
+
+.section-social li {
+    height: 4rem;
+    width: 4rem;
+    margin: 1% 1% 1% 0;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.section-social li a p {
+    display: inline-block;
+    position: relative;
+    top: -1rem;
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.section-social li:hover {
+    width: 100%;
+}
+
+.section-social li:nth-child(6) {
+    font-size: 1rem;
+    color: #424242;
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto;
+}
+
+.section-social li a img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    max-width: 4rem;
+}
 
 .grid {
     overflow: hidden;
@@ -182,23 +201,6 @@ body{
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-}
-
-.social{
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.social a{
-    padding-top: 1rem;
-    display: block;
-    width: 100%;
-    color: white;
-    text-decoration: none;
-    height: 4rem;
-    font-size: 1.5rem;
-    font-weight: 100;
 }
 
 .email{
@@ -233,78 +235,10 @@ body{
     background: #e52d27;
 }
 
-.social img{
-    position: relative;
-     float: left;
-     height: 3rem;
-     width: 3.5em;
-    top: 0.4rem;
-    padding: 5px;
- }
-
-/* Mobile */
-@media screen and (max-width: 800px){
-
-    .section-social{
-        display: none !important;
-    }
-
-    .section-content{
-        padding: 1rem;
-    }
-
-    .section-social-in{
-        display: inline-block !important;
-    }
-
-    .section-header {
-        width: 100%;
-        padding: 1rem;
-        clear: both;
-    }
-
-    .grid{
-        padding: 0;
-    }
-
-    body{
-        overflow: auto;
-    }
-
-    .desktop-footer {
-        display: none;
-    }
-
-    .mobile-footer {
-        display: inline-block;
-    }
-
-    .section {
-        position: relative;
-        display: block;
-        overflow: auto;
-        overflow-x: hidden;
-        height: auto;
-        width: 100%;
-        float: none;
-    }
-
+.github {
+    background: #000000;
 }
 
-@media screen and (min-width: 800px){
-    .section-social{
-        display: block;
-    }
-
-    .section-social-in{
-        display: none !important;
-    }
-
-    .desktop-footer {
-        display: block;
-    }
-
-    .mobile-footer {
-        display: none;
-    }
+.github:hover {
+    background: #130d06;
 }

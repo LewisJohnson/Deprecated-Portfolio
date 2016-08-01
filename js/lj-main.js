@@ -9,7 +9,7 @@ $(document).ready(function () {
     document.body.style.transform = scale;     // General
 
     $(".section").hide();
-    $('.section-social').hide();
+    $('.intro-title').fadeIn(600);
     var NameTicked = true;
     var TimesTicked = 0;
 
@@ -17,23 +17,22 @@ $(document).ready(function () {
     function name_tick() {
         if (NameTicked) {
             NameTicked = false;
-            $(".header-name").text("Lewis Johnson...");
+            $(".intro-title").text("Lewis Johnson...");
         } else {
             NameTicked = true;
-            $('.header-name').text("Lewis Johnson..|");
+            $('.intro-title').text("Lewis Johnson..|");
         }
         if(TimesTicked < 5) {
             TimesTicked++;
             setTimeout(name_tick, 500);
         } else {
-            $('.header-name').fadeOut(800);
+            $('.intro-title').fadeOut(800);
+            $('body').toggleClass('light');
             setTimeout(fadeLSecin, 800);
         }
     }
     function fadeLSecin(){
         $('.section.ls').fadeIn(400);
-        $('.section-social').fadeIn(400);
-
         setTimeout(fadeMSecin, 250);
     }
 
@@ -44,4 +43,5 @@ $(document).ready(function () {
     function fadeRSecin(){
         $('.section.rs').fadeIn(400);
     }
+
 });
