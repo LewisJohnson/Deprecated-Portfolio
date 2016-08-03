@@ -324,7 +324,7 @@ body{
     background: transparent;
 }
 
-@media screen and (max-width: 1280px), screen and (max-height: 800px) {
+@media screen and (max-width: 1300px), screen and (max-height: 850px) {
     .section-social li {
         float: left;
     }
@@ -349,7 +349,7 @@ body{
     }
 
     .section-content {
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
     body {
@@ -357,7 +357,7 @@ body{
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 800px) {
     .ls {
         width: 100%;
         float: none;
@@ -392,6 +392,10 @@ body{
 
     .divider {
         display: none;
+    }
+
+    .section-content {
+        padding: 0.5rem;
     }
 
 }
