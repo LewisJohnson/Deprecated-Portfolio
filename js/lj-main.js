@@ -19,7 +19,7 @@ $(document).ready(function () {
             NameTicked = true;
             $('.intro-title').text("Lewis Johnson..|");
         }
-        if(TimesTicked < 5) {
+        if (TimesTicked < 2) {
             TimesTicked++;
             setTimeout(name_tick, 500);
         } else {
@@ -42,6 +42,4 @@ $(document).ready(function () {
         $('.section.rs').fadeIn(400);
         $(".divider").fadeIn(400);
     }
-
-
 });
