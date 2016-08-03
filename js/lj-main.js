@@ -3,12 +3,9 @@
  */
 $(document).ready(function () {
 
-    var scale = 'scale(1)';
-    document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
-    document.body.style.msTransform =   scale;       // IE 9
-    document.body.style.transform = scale;     // General
 
     $(".section").hide();
+    $(".divider").hide();
     $('.intro-title').fadeIn(600);
     var NameTicked = true;
     var TimesTicked = 0;
@@ -28,6 +25,7 @@ $(document).ready(function () {
         } else {
             $('.intro-title').fadeOut(800);
             $('body').toggleClass('light');
+            $('body').css('height', 'auto');
             setTimeout(fadeLSecin, 800);
         }
     }
@@ -42,6 +40,7 @@ $(document).ready(function () {
     }
     function fadeRSecin(){
         $('.section.rs').fadeIn(400);
+        $(".divider").fadeIn(400);
     }
 
 
