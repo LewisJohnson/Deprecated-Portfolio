@@ -19,7 +19,7 @@ $(document).ready(function () {
             NameTicked = true;
             $('.intro-title').text("Lewis Johnson..|");
         }
-        if (TimesTicked < 2) {
+        if (TimesTicked < 3) {
             TimesTicked++;
             setTimeout(name_tick, 500);
         } else {

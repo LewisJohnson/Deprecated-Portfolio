@@ -391,11 +391,15 @@ body{
     }
 
     .divider {
-        display: none;
+        display: none !important;
     }
 
     .section-content {
         padding: 0.5rem;
+    }
+
+    .section {
+        margin-bottom: 2rem;
     }
 
 }
