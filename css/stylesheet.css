@@ -192,7 +192,7 @@ body{
 
 .grid li {
     margin-bottom: 1rem;
-    padding: 1rem 2rem 1rem 1rem;
+    padding: 1rem;
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -200,6 +200,10 @@ body{
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
+}
+
+.grid li:last-child {
+    margin-bottom: 0;
 }
 
 .grid li p a {
@@ -348,9 +352,6 @@ body{
         padding: 1rem;
     }
 
-    body {
-        font-size: smaller;
-    }
 }
 
 @media screen and (max-width: 800px) {

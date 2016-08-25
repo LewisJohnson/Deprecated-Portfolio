@@ -43,11 +43,12 @@ $(document).ready(function () {
         $(".divider").fadeIn(400);
     }
 
-
     $('.section-social li').on("mouseenter", function () {
             $(this).find('p').css('display', 'inline-block')
         })
         .on("mouseleave", function () {
-            $(this).find('p').css('display', 'none')
+            $(this).find('p').css('display', 'none');
+
         });
+
 });
