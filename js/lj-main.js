@@ -19,7 +19,7 @@ $(document).ready(function () {
             NameTicked = true;
             $('.intro-title').text("Lewis Johnson..|");
         }
-        if (TimesTicked < 3) {
+        if (TimesTicked < 4) {
             TimesTicked++;
             setTimeout(name_tick, 500);
         } else {
@@ -42,4 +42,12 @@ $(document).ready(function () {
         $('.section.rs').fadeIn(400);
         $(".divider").fadeIn(400);
     }
+
+
+    $('.section-social li').on("mouseenter", function () {
+            $(this).find('p').css('display', 'inline-block')
+        })
+        .on("mouseleave", function () {
+            $(this).find('p').css('display', 'none')
+        });
 });

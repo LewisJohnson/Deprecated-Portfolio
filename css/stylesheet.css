@@ -147,9 +147,9 @@ body{
 }
 
 .section-social li a p {
-    display: inline-block;
+    display: none;
     position: relative;
-    top: -0.7rem;
+    top: -1rem;
     font-weight: 100;
     color: #ffffff;
     font-size: 2rem;
@@ -338,10 +338,6 @@ body{
 
     .section-social li:hover {
         width: 4rem;
-    }
-
-    .section-social li a p {
-        display: none;
     }
 
     .section-header {
