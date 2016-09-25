@@ -4,11 +4,23 @@
     margin: 0;
 }
 
+/*todo: SORT OUT THIS CSS*/
+/*todo: SORT OUT THIS CSS*/
+/*todo: SORT OUT THIS CSS*/
+/*todo: SORT OUT THIS CSS*/
+/*todo: SORT OUT THIS CSS*/
+/*todo: SORT OUT THIS CSS*/
+/*todo: SORT OUT THIS CSS*/
+/*todo: SORT OUT THIS CSS*/
+/*todo: SORT OUT THIS CSS*/
+/*todo: SORT OUT THIS CSS*/
+/*todo: SORT OUT THIS CSS*/
+/*todo: SORT OUT THIS CSS*/
+
 /*
 Light: #ececec
 Dark: #232323 */
 body{
-    height: 100vh;
     background: #232323;
     -webkit-transition: background 4s;
     -moz-transition: background 4s;
@@ -46,8 +58,19 @@ body{
     float: left;
 }
 
+.selfie{
+    float: left;
+    width: 25%;
+    border-radius: 100%;
+    min-width: 5rem;
+}
+
 .section{
     position: relative;
+    min-height: 100vh;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    transition: background .5s;
 }
 
 .section-content{
@@ -68,15 +91,17 @@ body{
 }
 
 .section h1{
-    padding: 0.5rem 0.5rem 0;
-    font-weight: 300;
-    color: #d3d3d3;
-}
+     padding: 0 0.5rem 0;
+     font-weight: 300;
+     color: #d3d3d3;
+     font-size: 1.5rem;
+ }
 
 .section h2{
-    padding: 0 0.5rem 0.5rem;
+    padding: 0 0.5rem 0;
     font-weight: 100;
     color: #cacaca;
+    font-size: 1rem;
 }
 
 .section h3{
@@ -91,6 +116,32 @@ body{
     text-align: justify;
 }
 
+.sec-nav{
+    width: 3rem;
+    height: 3.3rem;
+    background: #393939;
+    color: white;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.sec-nav:hover{
+    cursor: pointer;
+}
+
+.sec-next{
+    position: absolute;
+    right: 0;
+    top: -0.5%;
+}
+
+.sec-prev{
+    position: absolute;
+    left: 0;
+    top: -0.5%;
+}
+
 .section-header {
     overflow: hidden;
     white-space: nowrap;
@@ -98,11 +149,11 @@ body{
 }
 
 .ls .section-header{
-    background: #141414;
+    background: #222222;
 }
 
 .ms .section-header{
-    background: #181818;
+    background: #222222;
 }
 
 .rs .section-header{
@@ -157,14 +208,6 @@ body{
 
 .section-social li:hover {
     width: 100%;
-}
-
-.section-social li:nth-child(6) {
-    font-size: 1rem;
-    color: #979797;
-    overflow: hidden;
-    white-space: nowrap;
-    width: auto;
 }
 
 .section-social li a img {
@@ -328,16 +371,9 @@ body{
     background: transparent;
 }
 
-@media screen and (max-width: 1300px), screen and (max-height: 850px) {
+@media screen and (max-width: 1300px) {
     .section-social li {
         float: left;
-    }
-
-    .section-social li:nth-child(6) {
-        float: none;
-        white-space: normal;
-        width: auto;
-        clear: both;
     }
 
     .section-social li:hover {
@@ -351,10 +387,25 @@ body{
     .section-content {
         padding: 1rem;
     }
-
 }
 
 @media screen and (max-width: 800px) {
+
+    .section-social{
+        margin: 10px auto;
+        display:flex;
+        justify-content: center;
+    }
+
+    .selfie{
+        position: relative;
+        float: none;
+        width: 30%;
+        left: 30%;
+        border-radius: 100%;
+        margin: 1rem;
+    }
+
     .ls {
         width: 100%;
         float: none;
@@ -368,6 +419,14 @@ body{
     .rs {
         width: 100%;
         float: none;
+    }
+
+    .ms .section-header{
+        text-align: center;
+    }
+
+    .rs .section-header{
+        text-align: center;
     }
 
     body {
@@ -398,5 +457,4 @@ body{
     .section {
         margin-bottom: 2rem;
     }
-
 }
