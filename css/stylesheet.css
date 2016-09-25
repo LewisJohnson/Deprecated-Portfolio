@@ -6,7 +6,9 @@
 
 /*
 Light: #ececec
-Dark: #232323 */
+Dark: #232323
+*/
+
 body{
     background: #232323;
     -webkit-transition: background 4s;
@@ -104,13 +106,20 @@ body{
 }
 
 .sec-nav{
+    position: absolute;
+    top: 0;
     width: 3rem;
+<<<<<<< HEAD
+    height: 55px;
+=======
     height: 52px;
+>>>>>>> 1eebd574bd596d500207e552dd445b56b592e77e
     background: #393939;
     color: white;
     font-size: 3rem;
     font-weight: 100;
     text-align: center;
+
 }
 
 .sec-nav:hover{
@@ -118,15 +127,11 @@ body{
 }
 
 .sec-next{
-    position: absolute;
     right: 0;
-    top: -0.5%;
 }
 
 .sec-prev{
-    position: absolute;
     left: 0;
-    top: -0.5%;
 }
 
 .section-header {
@@ -406,6 +411,10 @@ body{
     .rs {
         width: 100%;
         float: none;
+    }
+
+    .section-header {
+        height: 55px;
     }
 
     .ms .section-header{
