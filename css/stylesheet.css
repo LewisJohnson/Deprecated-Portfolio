@@ -4,19 +4,6 @@
     margin: 0;
 }
 
-/*todo: SORT OUT THIS CSS*/
-/*todo: SORT OUT THIS CSS*/
-/*todo: SORT OUT THIS CSS*/
-/*todo: SORT OUT THIS CSS*/
-/*todo: SORT OUT THIS CSS*/
-/*todo: SORT OUT THIS CSS*/
-/*todo: SORT OUT THIS CSS*/
-/*todo: SORT OUT THIS CSS*/
-/*todo: SORT OUT THIS CSS*/
-/*todo: SORT OUT THIS CSS*/
-/*todo: SORT OUT THIS CSS*/
-/*todo: SORT OUT THIS CSS*/
-
 /*
 Light: #ececec
 Dark: #232323 */
@@ -118,7 +105,7 @@ body{
 
 .sec-nav{
     width: 3rem;
-    height: 3.3rem;
+    height: 52px;
     background: #393939;
     color: white;
     font-size: 3rem;
