@@ -9,6 +9,17 @@ Light: #ececec
 Dark: #232323
 */
 
+
+li a p {
+    color: #545454;
+}
+
+i {
+    color: #545454;
+    float: left;
+    font-size: 2rem !important;
+}
+
 body{
     background: #232323;
     -webkit-transition: background 4s;
