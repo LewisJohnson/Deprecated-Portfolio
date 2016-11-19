@@ -109,11 +109,7 @@ body{
     position: absolute;
     top: 0;
     width: 3rem;
-<<<<<<< HEAD
-    height: 55px;
-=======
     height: 52px;
->>>>>>> 1eebd574bd596d500207e552dd445b56b592e77e
     background: #393939;
     color: white;
     font-size: 3rem;
@@ -183,30 +179,6 @@ body{
     height: 4rem;
     width: 4rem;
     margin: 1% 1% 1% 0;
-    overflow: hidden;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.section-social li a p {
-    display: none;
-    position: relative;
-    top: -1rem;
-    font-weight: 100;
-    color: #ffffff;
-    font-size: 2rem;
-}
-
-.section-social li:hover {
-    width: 100%;
-}
-
-.section-social li a img {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    max-width: 4rem;
 }
 
 .grid {
@@ -281,46 +253,6 @@ body{
     padding-right: 1rem;
 }
 
-.email{
-     background: #222222;
- }
-
-.email:hover{
-    background: #4b4b4b;
-}
-
-.twitter{
-    background: #1c364b;
-}
-
-.twitter:hover{
-    background: #55acee;
-}
-
-.stackOverflow{
-    background: #4b2d00;
-}
-
-.stackOverflow:hover{
-    background: #FF9900;
-}
-
-.yt{
-    background: #4b0d0b;
-}
-
-.yt:hover{
-    background: #e52d27;
-}
-
-.github {
-    background: #000000;
-}
-
-.github:hover {
-    background: #130d06;
-}
-
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -364,14 +296,6 @@ body{
 }
 
 @media screen and (max-width: 1300px) {
-    .section-social li {
-        float: left;
-    }
-
-    .section-social li:hover {
-        width: 4rem;
-    }
-
     .section-header {
         padding: 0;
     }
