@@ -20,13 +20,6 @@ body{
     background: #ffffff;
 }
 
-::selection {
-    background: rgb(210, 210, 210);
-}
-::-moz-selection {
-    background: rgb(210, 210, 210);
-}
-
 .intro-title {
     position: absolute;
     top: 50%;
@@ -105,31 +98,6 @@ body{
     text-align: justify;
 }
 
-.sec-nav{
-    position: absolute;
-    top: 0;
-    width: 3rem;
-    height: 52px;
-    background: #393939;
-    color: white;
-    font-size: 3rem;
-    font-weight: 100;
-    text-align: center;
-
-}
-
-.sec-nav:hover{
-    cursor: pointer;
-}
-
-.sec-next{
-    right: 0;
-}
-
-.sec-prev{
-    left: 0;
-}
-
 .section-header {
     overflow: hidden;
     white-space: nowrap;
@@ -172,7 +140,6 @@ body{
     width: 100%;
     margin: 0;
     padding: 1rem 0 0;
-    overflow: hidden;
 }
 
 .section-social li {
