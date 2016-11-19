@@ -54,7 +54,6 @@ body{
 .selfie{
     float: left;
     width: 25%;
-    border-radius: 100%;
     min-width: 5rem;
 }
 
