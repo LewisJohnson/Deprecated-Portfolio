@@ -32,17 +32,10 @@ $(document).ready(function () {
     }
 
     function whatnext() {
-        var windowSize = $(window).width();
-        if(windowSize < 800){
-            $('#section1').show();
-            $('#section2').hide();
-            $('#section3').hide();
-        } else {
-            $('#section2').fadeIn(400);
-            $('#section3').fadeIn(600);
-            $( ".sec-nav" ).each(function() {
+        $('#section2').fadeIn(400);
+        $('#section3').fadeIn(600);
+        $( ".sec-nav" ).each(function() {
                 $(this).hide();
-            });
-        }
+        });
     }
 });
