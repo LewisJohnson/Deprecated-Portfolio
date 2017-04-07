@@ -71,9 +71,6 @@ body{
 .section{
     position: relative;
     min-height: 100vh;
-    -webkit-transition: background .5s;
-    -moz-transition: background .5s;
-    transition: background .5s;
 }
 
 .section-content{
