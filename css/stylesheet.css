@@ -13,8 +13,19 @@ Dark: #232323
 a {text-decoration: none;}
 
 li a p {
-    color: #545454;
     padding-left: 2rem;
+}
+
+li a {
+    display: block;
+    padding: 1rem;
+    color: black;
+    transition: all 0.5s;
+}
+
+li a:hover  {
+    color: white;
+    background: #303030;
 }
 
 i {
@@ -76,10 +87,6 @@ body{
 
 .ms .section-content ul > li:before {
     content: "- ";
-}
-
-.ms .section-content ul li {
-    color: #232323;
 }
 
 .section h1{
@@ -155,7 +162,6 @@ body{
 .section-social li {
     margin: 10px 5px 5px 5px;
     border: 1px solid black;
-    padding: 1rem;
     border-radius: 2px;
 }
 
