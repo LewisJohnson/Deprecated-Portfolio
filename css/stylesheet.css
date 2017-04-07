@@ -10,8 +10,11 @@ Dark: #232323
 */
 
 
+a {
+    text-decoration: none;}
 li a p {
     color: #545454;
+    padding-left: 2rem;
 }
 
 i {
@@ -152,7 +155,10 @@ body{
 }
 
 .section-social li {
-    margin: 1% 1% 1% 0;
+    margin: 10px 5px 5px 5px;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 2px;
 }
 
 .grid {
@@ -283,8 +289,6 @@ body{
 
     .section-social{
         margin: 10px auto;
-        display:flex;
-        justify-content: center;
     }
 
     .selfie{
@@ -294,6 +298,10 @@ body{
         left: 30%;
         border-radius: 100%;
         margin: 1rem;
+    }
+    
+    .section p{
+        padding: none;
     }
 
     .ls {
