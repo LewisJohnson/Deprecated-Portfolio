@@ -10,8 +10,8 @@ Dark: #232323
 */
 
 
-a {
-    text-decoration: none;}
+a {text-decoration: none;}
+
 li a p {
     color: #545454;
     padding-left: 2rem;
@@ -54,8 +54,7 @@ body{
 }
 
 .selfie{
-    width: 25%;
-    min-width: 5rem;
+    width: 150px;
 }
 
 .section{
@@ -288,14 +287,6 @@ body{
 
     .section-social{
         margin: 10px auto;
-    }
-
-    .selfie{
-        position: relative;
-        float: none;
-        width: 30%;
-        left: 30%;
-        margin: 1rem;
     }
     
     .section p{
