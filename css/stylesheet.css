@@ -12,18 +12,18 @@ Dark: #232323
 
 a {text-decoration: none;}
 
-li a p {
+.section-social li a p {
     padding-left: 2rem;
 }
 
-li a {
+.section-social li a {
     display: block;
     padding: 1rem;
     color: black;
     transition: all 0.5s;
 }
 
-li a:hover  {
+.section-social li a:hover  {
     color: white;
     background: #303030;
 }
