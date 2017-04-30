@@ -46,7 +46,6 @@
         if (key == 38 && snake_dir != 2) {
             snake_next_dir = 0;
         } else {
-
             if (key == 39 && snake_dir != 3) {
                 snake_next_dir = 1;
             } else {
