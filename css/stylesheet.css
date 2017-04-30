@@ -2,8 +2,20 @@
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, a, p { font-family: 'Roboto', sans-serif; }
+::selection {
+    color: #000000;
+    background: yellow;
+}
 
+::-moz-selection { /* Code for Firefox */
+    color: #000000;
+    background: yellow;
+}
+h1, h2, h3, h4, h5, h6, a, p, li { font-family: 'Roboto', sans-serif; }
+
+body {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAALElEQVQoU2NkIAIwEqGGgWxFxgwMDGeRbUA3CaYARSE26wiahNUfZDscwzQAjxwECjNpgnwAAAAASUVORK5CYII=) repeat;
+}
 /* HELPERS */
 
 .border {
@@ -22,6 +34,7 @@ h1, h2, h3, h4, h5, h6, a, p { font-family: 'Roboto', sans-serif; }
     height: 30rem;
     transition: height 0.3s;
     border-bottom: 1px solid black;
+    background: white;
 }
 
 .main-header h1 {
@@ -46,8 +59,15 @@ h1, h2, h3, h4, h5, h6, a, p { font-family: 'Roboto', sans-serif; }
 
 .section {
     padding: 2rem;
-    margin: 4rem 15rem;
+    margin: 4rem auto;
     max-width: 800px;
+    background: white;
+    transition: all 0.3s;
+    box-shadow: 2px 2px 0px 2px black;
+}
+
+.section:hover {
+    box-shadow: 10px 10px 0px 5px black;
 }
 
 .section p {
@@ -152,6 +172,7 @@ h1, h2, h3, h4, h5, h6, a, p { font-family: 'Roboto', sans-serif; }
 @media screen and (max-width: 797px) {
     .main-header {
         height: 15rem;
+        font-size: 6vw;
     }
 
     .main-header h1 {
@@ -165,7 +186,7 @@ h1, h2, h3, h4, h5, h6, a, p { font-family: 'Roboto', sans-serif; }
 
     .section {
         padding: 1rem;
-        margin: 1rem 1rem;
+        margin: 3rem 1rem;
         max-width: 800px;
     }
 }
