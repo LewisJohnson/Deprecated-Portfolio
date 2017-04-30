@@ -2,6 +2,28 @@
     margin: 0;
 }
 
+p a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.experience li a, p a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a:hover{
+    background: yellow;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, li { font-family: 'Roboto', sans-serif; }
+
+body {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAALElEQVQoU2NkIAIwEqGGgWxFxgwMDGeRbUA3CaYARSE26wiahNUfZDscwzQAjxwECjNpgnwAAAAASUVORK5CYII=) repeat;
+}
+
 ::selection {
     color: #000000;
     background: yellow;
@@ -10,11 +32,6 @@
 ::-moz-selection { /* Code for Firefox */
     color: #000000;
     background: yellow;
-}
-h1, h2, h3, h4, h5, h6, a, p, li { font-family: 'Roboto', sans-serif; }
-
-body {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAALElEQVQoU2NkIAIwEqGGgWxFxgwMDGeRbUA3CaYARSE26wiahNUfZDscwzQAjxwECjNpgnwAAAAASUVORK5CYII=) repeat;
 }
 /* HELPERS */
 
