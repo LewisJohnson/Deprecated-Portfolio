@@ -4,11 +4,11 @@
 
 h1, h2, h3, h4, h5, h6, a, p, li { font-family: 'Roboto', sans-serif; }
 li, a, li a { transition: all 0.2s;  }
-p a {  color: black;  font-weight: 700;  text-decoration: none;  }
-a:hover, a:focus{  outline: none; background: yellow;  }
-p a, .experience li a{  color: black;  font-weight: 500;  text-decoration: none;  }
+p a {color: black;  font-weight: 700;  text-decoration: none;  }
+a:hover, a:focus{ outline: none; background: yellow;  }
+p a, .experience li a{color: black;  font-weight: 500;  text-decoration: none;  }
 li a:hover, a:hover, li a:focus, a:focus{ font-weight: 900; }
-body {  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAALElEQVQoU2NkIAIwEqGGgWxFxgwMDGeRbUA3CaYARSE26wiahNUfZDscwzQAjxwECjNpgnwAAAAASUVORK5CYII=) repeat;  }
+body { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAALElEQVQoU2NkIAIwEqGGgWxFxgwMDGeRbUA3CaYARSE26wiahNUfZDscwzQAjxwECjNpgnwAAAAASUVORK5CYII=) repeat;  }
 
 ::selection { color: black;  background: yellow; }
 ::-moz-selection { color: black;  background: yellow; }
@@ -16,8 +16,8 @@ body {  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCA
 .yellow::-moz-selection { color: yellow;  background: black; }
 
 /* HELPERS */
-.border {  border: 1px solid black;  }
-.border.smooth {  border-radius: 2px;  }
+.border {border: 1px solid black;  }
+.border.smooth {border-radius: 2px;  }
 
 .main-header {
     position: relative;
@@ -64,6 +64,7 @@ body {  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCA
 
 .section:hover, .section:focus, .section:active {
     box-shadow: 10px 10px 0 5px black;
+    outline: none;
 }
 
 .section p {
@@ -78,7 +79,6 @@ body {  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCA
     transition: background 0.3s;
  }
 
-
 .section-social{
     list-style: none;
     width: 100%;
@@ -91,7 +91,7 @@ body {  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCA
     transition: all 0.2s;
 }
 
-.section-social li:hover, .section-social li:active  {
+.section-social li:hover, .section-social li:active, .section-social li:focus  {
     border: 1px solid black;
     border-right-width: 5px;
     border-bottom-width: 5px;

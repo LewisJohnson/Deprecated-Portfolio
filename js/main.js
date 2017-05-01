@@ -25,14 +25,13 @@ document.addEventListener("DOMContentLoaded", function(){
         }
 
         for(var i =0; i < sections.length; i++){
-            var section = sections[i];
-            var header = section.children[0];
+            var header = sections[i].children[0];
             if(isInViewport(sections[i])){
-                section.focus();
+                sections[i].focus();
                 header.children[0].style.background = "yellow";
                 header.children[0].classList.add("yellow");
             } else {
-                section.blur();
+                sections[i].blur();
                 header.children[0].style.background = "white";
                 header.children[0].classList.remove("yellow");
             }
