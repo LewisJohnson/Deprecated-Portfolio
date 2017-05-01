@@ -2,20 +2,43 @@
  * Created by Lewis Johnson on 24/07/2016.
  */
 document.addEventListener("DOMContentLoaded", function(){
-    // var swappedPattern;
-    //
-    // function swappedPattern() {
-    //     var overlay = document.getElementById("overlay");
-    //     if(swappedPattern){
-    //         overlay.style.backgroundImage = "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAANklEQVQYV2NkYGDY/P///zQGLIDx////koyMjLOwKQBLgjRhUwCXxKYARRJdAYYksgKskjAFAAaWKz9ed0kEAAAAAElFTkSuQmCC')";
-    //     } else {
-    //         overlay.style.backgroundImage = "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAPklEQVQYV2NkYGDY/P///zQGLIDx////koyMjM9BNLo8WBIkyMjIOAvdBLgkNgUoklAFcCswJJFNwCoJUwAACP4rPybpS5IAAAAASUVORK5CYII=')";
-    //     }
-    //     swappedPattern = !swappedPattern;
-    //     setTimeout(swappedPattern, 50);
-    // }
-    //
-    // swappedPattern();
+
+    function isInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        var html = document.documentElement;
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || html.clientHeight) &&
+            rect.right <= (window.innerWidth || html.clientWidth)
+        );
+    }
+
+    window.onscroll = function() {
+        var sections = document.getElementsByClassName("section");
+        var mainHeader = document.getElementsByClassName("main-header")[0];
+
+        if(isInViewport(mainHeader)){
+            mainHeader.children[0].style.background = "rgba(0,210,255,0.2)";
+        } else {
+            mainHeader.children[0].style.background = "rgba(0,0,0,0)";
+        }
+
+        for(var i =0; i < sections.length; i++){
+            var section = sections[i];
+            var header = section.children[0];
+            if(isInViewport(sections[i])){
+                section.focus();
+                header.children[0].style.background = "yellow";
+                header.children[0].classList.add("yellow");
+            } else {
+                section.blur();
+                header.children[0].style.background = "white";
+                header.children[0].classList.remove("yellow");
+            }
+        }
+    };
+
 });
 //
 // String.prototype.shuffle = function () {
