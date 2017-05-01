@@ -194,6 +194,7 @@
         addPill();
 
         canvas.onkeydown = function (evt) {
+            evt.preventDefault();
             evt = evt || window.event;
             changeDir(evt.keyCode);
         };
