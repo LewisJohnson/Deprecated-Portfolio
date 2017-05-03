@@ -1,3 +1,5 @@
+/* Base Styles */
+
 * {
     margin: 0;
 }
@@ -10,15 +12,22 @@ p a, .experience li a{color: black;  font-weight: 500;  text-decoration: none;  
 li a:hover, a:hover, li a:focus, a:focus{ font-weight: 900; }
 body { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAALElEQVQoU2NkIAIwEqGGgWxFxgwMDGeRbUA3CaYARSE26wiahNUfZDscwzQAjxwECjNpgnwAAAAASUVORK5CYII=) repeat;  }
 
+/* Highlight */
 ::selection { color: black;  background: yellow; }
 ::-moz-selection { color: black;  background: yellow; }
 .yellow::selection { color: yellow;  background: black; }
 .yellow::-moz-selection { color: yellow;  background: black; }
 
-/* HELPERS */
+/* Helpers */
 .border {border: 1px solid black;  }
 .border.smooth {border-radius: 2px;  }
 
+.section-shadow {
+    box-shadow: 10px 10px 0 5px black !important;
+    outline: none;
+}
+
+/* Header */
 .main-header {
     position: relative;
     text-align: center;
@@ -42,6 +51,7 @@ body { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAY
     transition: background 0.3s;
 }
 
+
 .main-header .overlay{
     position: absolute;
     height: 30rem;
@@ -53,6 +63,7 @@ body { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAY
     z-index: 1;
 }
 
+/* Information section */
 .section {
     padding: 2rem;
     margin: 4rem auto;
@@ -60,11 +71,6 @@ body { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAY
     background: white;
     transition: all 0.3s;
     box-shadow: 2px 2px 0 2px black;
-}
-
-.section:hover, .section:focus, .section:active {
-    box-shadow: 10px 10px 0 5px black;
-    outline: none;
 }
 
 .section p {
@@ -115,6 +121,8 @@ body { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAY
     color: #545454;
     float: left;
 }
+
+/* Project grid */
 
 .grid {
     display: table;
@@ -169,7 +177,8 @@ body { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAY
     border-radius: 2px 0 0 0;
 }
 
-@media screen and (max-width: 797px) {
+/* Mobile Style */
+@media screen and (max-width: 910px) {
     .main-header {
         height: 15rem;
         font-size: 6vw;
@@ -188,5 +197,10 @@ body { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAY
         padding: 1rem;
         margin: 3rem 1rem;
         max-width: 800px;
+    }
+
+    .section-shadow {
+        box-shadow: 10px 10px 0 0px black !important;
+        outline: none;
     }
 }

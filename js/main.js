@@ -3,6 +3,9 @@
  */
 document.addEventListener("DOMContentLoaded", function(){
 
+    var mainHeaderAccent = "rgba(0,210,255,0.2)";
+    var lastHeaderInViewport;
+
     function isInViewport(element) {
         var rect = element.getBoundingClientRect();
         var html = document.documentElement;
@@ -15,23 +18,32 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     window.onscroll = function() {
+
         var sections = document.getElementsByClassName("section");
         var mainHeader = document.getElementsByClassName("main-header")[0];
 
+        // Check main header
         if(isInViewport(mainHeader)){
-            mainHeader.children[0].style.background = "rgba(0,210,255,0.2)";
+            mainHeader.children[0].style.background = mainHeaderAccent;
         } else {
             mainHeader.children[0].style.background = "rgba(0,0,0,0)";
         }
 
+        //Check sections
         for(var i =0; i < sections.length; i++){
-            var header = sections[i].children[0];
-            if(isInViewport(sections[i])){
-                sections[i].focus();
+            if (isInViewport(sections[i].children[0])) {
+                lastHeaderInViewport = sections[i];
+            }
+        }
+
+        for (var j = 0; j < sections.length; j++) {
+            var header = sections[j].children[0];
+            if (lastHeaderInViewport == sections[j]) {
+                lastHeaderInViewport.classList.add("section-shadow");
                 header.children[0].style.background = "yellow";
                 header.children[0].classList.add("yellow");
             } else {
-                sections[i].blur();
+                sections[j].classList.remove("section-shadow");
                 header.children[0].style.background = "white";
                 header.children[0].classList.remove("yellow");
             }
