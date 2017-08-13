@@ -295,12 +295,16 @@ ul.source-stats li h2{
     }
 
     .section-shadow {
-        box-shadow: 10px 10px 0 0px black !important;
+        box-shadow: 10px 10px 0 0 black !important;
         outline: none;
     }
 
     .language-stats {
-        padding: 5px;
+        padding: 5px 25px;
+    }
+
+    .source-stats {
+        padding: 5px 5px 2rem;
     }
 
 }
