@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         for (var j = 0; j < stats.children.length; j++)
         {
-            stats.children[j].style.width = (100 / stats.children.length) - 0.5 + "%";
+            stats.children[j].style.width = (100 / stats.children.length) - 1 + "%";
         }
     }
 
