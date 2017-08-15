@@ -58,10 +58,7 @@ document.addEventListener("DOMContentLoaded", function(){
             stats.children[j].style.width = (100 / stats.children.length) - 1 + "%";
         }
     }
-
-
 });
-
 
 function isInViewport(element) {
     var rect = element.getBoundingClientRect();
